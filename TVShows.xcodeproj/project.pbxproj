@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		671C0A141B87812600A4114D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671C0A131B87812600A4114D /* main.m */; };
 		671C0A171B87812600A4114D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671C0A161B87812600A4114D /* AppDelegate.m */; };
-		671C0A1A1B87812600A4114D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671C0A191B87812600A4114D /* ViewController.m */; };
+		671C0A1A1B87812600A4114D /* TVShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671C0A191B87812600A4114D /* TVShowsViewController.m */; };
 		671C0A1D1B87812600A4114D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671C0A1B1B87812600A4114D /* Main.storyboard */; };
 		671C0A1F1B87812600A4114D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671C0A1E1B87812600A4114D /* Images.xcassets */; };
 		671C0A221B87812600A4114D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671C0A201B87812600A4114D /* LaunchScreen.xib */; };
 		671C0A2E1B87812600A4114D /* TVShowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 671C0A2D1B87812600A4114D /* TVShowsTests.m */; };
+		674102881B87933700D1AEC8 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 674102871B87933700D1AEC8 /* NetworkManager.m */; };
+		6741028C1B87A68800D1AEC8 /* URLConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6741028B1B87A68800D1AEC8 /* URLConfiguration.m */; };
+		674102911B87CB2900D1AEC8 /* TVShowsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 674102901B87CB2900D1AEC8 /* TVShowsParser.m */; };
+		674102951B87CB7100D1AEC8 /* TVShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 674102941B87CB7100D1AEC8 /* TVShow.m */; };
+		674102981B87CB9B00D1AEC8 /* TVShowContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 674102971B87CB9B00D1AEC8 /* TVShowContainer.m */; };
+		6741029C1B87D8E900D1AEC8 /* NetworkManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6741029B1B87D8E900D1AEC8 /* NetworkManagerDelegate.m */; };
+		674102A31B87DD7A00D1AEC8 /* TVShowTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 674102A21B87DD7A00D1AEC8 /* TVShowTableCell.m */; };
+		674102BF1B880D5800D1AEC8 /* ImagesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 674102BE1B880D5800D1AEC8 /* ImagesContainer.m */; };
+		674102C31B89434700D1AEC8 /* PopOverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 674102C21B89434700D1AEC8 /* PopOverContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +41,34 @@
 		671C0A131B87812600A4114D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		671C0A151B87812600A4114D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		671C0A161B87812600A4114D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		671C0A181B87812600A4114D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		671C0A191B87812600A4114D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		671C0A181B87812600A4114D /* TVShowsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TVShowsViewController.h; path = ../../TVShowsViewController.h; sourceTree = "<group>"; };
+		671C0A191B87812600A4114D /* TVShowsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TVShowsViewController.m; path = ../../TVShowsViewController.m; sourceTree = "<group>"; };
 		671C0A1C1B87812600A4114D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		671C0A1E1B87812600A4114D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		671C0A211B87812600A4114D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		671C0A271B87812600A4114D /* TVShowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVShowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		671C0A2C1B87812600A4114D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		671C0A2D1B87812600A4114D /* TVShowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVShowsTests.m; sourceTree = "<group>"; };
+		674102861B87933700D1AEC8 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		674102871B87933700D1AEC8 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		6741028A1B87A68800D1AEC8 /* URLConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConfiguration.h; sourceTree = "<group>"; };
+		6741028B1B87A68800D1AEC8 /* URLConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLConfiguration.m; sourceTree = "<group>"; };
+		6741028D1B87A6BF00D1AEC8 /* SystemLevelConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemLevelConstants.h; sourceTree = "<group>"; };
+		6741028F1B87CB2900D1AEC8 /* TVShowsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowsParser.h; sourceTree = "<group>"; };
+		674102901B87CB2900D1AEC8 /* TVShowsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowsParser.m; sourceTree = "<group>"; };
+		674102931B87CB7100D1AEC8 /* TVShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShow.h; sourceTree = "<group>"; };
+		674102941B87CB7100D1AEC8 /* TVShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShow.m; sourceTree = "<group>"; };
+		674102961B87CB9B00D1AEC8 /* TVShowContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowContainer.h; sourceTree = "<group>"; };
+		674102971B87CB9B00D1AEC8 /* TVShowContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowContainer.m; sourceTree = "<group>"; };
+		6741029A1B87D8E900D1AEC8 /* NetworkManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManagerDelegate.h; sourceTree = "<group>"; };
+		6741029B1B87D8E900D1AEC8 /* NetworkManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManagerDelegate.m; sourceTree = "<group>"; };
+		674102A11B87DD7A00D1AEC8 /* TVShowTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowTableCell.h; sourceTree = "<group>"; };
+		674102A21B87DD7A00D1AEC8 /* TVShowTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVShowTableCell.m; sourceTree = "<group>"; };
+		674102BD1B880D5800D1AEC8 /* ImagesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesContainer.h; sourceTree = "<group>"; };
+		674102BE1B880D5800D1AEC8 /* ImagesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesContainer.m; sourceTree = "<group>"; };
+		674102C11B89434700D1AEC8 /* PopOverContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOverContentViewController.h; sourceTree = "<group>"; };
+		674102C21B89434700D1AEC8 /* PopOverContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOverContentViewController.m; sourceTree = "<group>"; };
+		674102C61B89AE3000D1AEC8 /* TVShowsViewController_TVShowTableViewPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVShowsViewController_TVShowTableViewPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +110,15 @@
 		671C0A101B87812600A4114D /* TVShows */ = {
 			isa = PBXGroup;
 			children = (
+				674102C41B89AD6500D1AEC8 /* TestFiles */,
+				674102991B87D8C700D1AEC8 /* Delegates */,
+				674102921B87CB5000D1AEC8 /* Models */,
+				6741028E1B87B70900D1AEC8 /* Parser */,
+				674102891B87A63C00D1AEC8 /* Constants */,
+				674102851B87931300D1AEC8 /* NetworkManager */,
+				671C0A371B8781F000A4114D /* ViewControllers */,
 				671C0A151B87812600A4114D /* AppDelegate.h */,
 				671C0A161B87812600A4114D /* AppDelegate.m */,
-				671C0A181B87812600A4114D /* ViewController.h */,
-				671C0A191B87812600A4114D /* ViewController.m */,
 				671C0A1B1B87812600A4114D /* Main.storyboard */,
 				671C0A1E1B87812600A4114D /* Images.xcassets */,
 				671C0A201B87812600A4114D /* LaunchScreen.xib */,
@@ -117,6 +151,93 @@
 				671C0A2C1B87812600A4114D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		671C0A371B8781F000A4114D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				674102C01B89432700D1AEC8 /* PopOverViewController */,
+				6741029D1B87DD0200D1AEC8 /* TVShowViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		674102851B87931300D1AEC8 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				674102861B87933700D1AEC8 /* NetworkManager.h */,
+				674102871B87933700D1AEC8 /* NetworkManager.m */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		674102891B87A63C00D1AEC8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6741028A1B87A68800D1AEC8 /* URLConfiguration.h */,
+				6741028B1B87A68800D1AEC8 /* URLConfiguration.m */,
+				6741028D1B87A6BF00D1AEC8 /* SystemLevelConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6741028E1B87B70900D1AEC8 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				6741028F1B87CB2900D1AEC8 /* TVShowsParser.h */,
+				674102901B87CB2900D1AEC8 /* TVShowsParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		674102921B87CB5000D1AEC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				674102931B87CB7100D1AEC8 /* TVShow.h */,
+				674102941B87CB7100D1AEC8 /* TVShow.m */,
+				674102961B87CB9B00D1AEC8 /* TVShowContainer.h */,
+				674102971B87CB9B00D1AEC8 /* TVShowContainer.m */,
+				674102BD1B880D5800D1AEC8 /* ImagesContainer.h */,
+				674102BE1B880D5800D1AEC8 /* ImagesContainer.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		674102991B87D8C700D1AEC8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6741029A1B87D8E900D1AEC8 /* NetworkManagerDelegate.h */,
+				6741029B1B87D8E900D1AEC8 /* NetworkManagerDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		6741029D1B87DD0200D1AEC8 /* TVShowViewController */ = {
+			isa = PBXGroup;
+			children = (
+				671C0A181B87812600A4114D /* TVShowsViewController.h */,
+				671C0A191B87812600A4114D /* TVShowsViewController.m */,
+				674102A11B87DD7A00D1AEC8 /* TVShowTableCell.h */,
+				674102A21B87DD7A00D1AEC8 /* TVShowTableCell.m */,
+			);
+			path = TVShowViewController;
+			sourceTree = "<group>";
+		};
+		674102C01B89432700D1AEC8 /* PopOverViewController */ = {
+			isa = PBXGroup;
+			children = (
+				674102C11B89434700D1AEC8 /* PopOverContentViewController.h */,
+				674102C21B89434700D1AEC8 /* PopOverContentViewController.m */,
+			);
+			path = PopOverViewController;
+			sourceTree = "<group>";
+		};
+		674102C41B89AD6500D1AEC8 /* TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+				674102C61B89AE3000D1AEC8 /* TVShowsViewController_TVShowTableViewPrivate.h */,
+			);
+			path = TestFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +340,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671C0A1A1B87812600A4114D /* ViewController.m in Sources */,
+				674102C31B89434700D1AEC8 /* PopOverContentViewController.m in Sources */,
+				674102881B87933700D1AEC8 /* NetworkManager.m in Sources */,
+				671C0A1A1B87812600A4114D /* TVShowsViewController.m in Sources */,
+				6741029C1B87D8E900D1AEC8 /* NetworkManagerDelegate.m in Sources */,
+				674102981B87CB9B00D1AEC8 /* TVShowContainer.m in Sources */,
+				6741028C1B87A68800D1AEC8 /* URLConfiguration.m in Sources */,
 				671C0A171B87812600A4114D /* AppDelegate.m in Sources */,
+				674102951B87CB7100D1AEC8 /* TVShow.m in Sources */,
 				671C0A141B87812600A4114D /* main.m in Sources */,
+				674102A31B87DD7A00D1AEC8 /* TVShowTableCell.m in Sources */,
+				674102BF1B880D5800D1AEC8 /* ImagesContainer.m in Sources */,
+				674102911B87CB2900D1AEC8 /* TVShowsParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +546,7 @@
 				671C0A331B87812600A4114D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		671C0A341B87812600A4114D /* Build configuration list for PBXNativeTarget "TVShowsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +555,7 @@
 				671C0A361B87812600A4114D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
